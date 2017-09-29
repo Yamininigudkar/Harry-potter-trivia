@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+       <meta charset="UTF-8">
+       <title>Trivia game</title>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+       <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+       <link href="https://fonts.googleapis.com/css?family=Chonburi" rel="stylesheet">
+       
+  </head>
+
+  <body>
+  
+    <header>
+      <img src="./assets/images/header.gif">
+            <div class="text-center">
+            <button class="btn btn-warning btn-xs theme-button"><span class="glyphicon glyphicon-music"></span> Play Theme!</button>
+            <button class="btn btn-default btn-xs pause-button"><span class="glyphicon glyphicon-pause"></span> Pause Song</button>
+          </div>
+          
+           <button class="btn btn-danger btn-lg Play-button" id="play"> PLAY</button>
+
+    </header>
+    
+    
+ <div class="container" id="questionPanel" > 
+
+  <div id="timer"><h2>Time:</h2></div> <!-- Show Timer-->  
+
+   
+  <div class="row">
+
+    
+    <div id="question"><h2>Questions</h2>
+    </div>
+    </div>
+      <div class="row" id="firstRow">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          
+              <div class="radio">
+              <input type="radio"  name="a1" value="A"><label  id="AnswerA"></label>
+              </div>
+              <div class="radio">
+              <input type="radio"  name="a1" value="B"><label id="AnswerB"></label>
+              </div>
+            
+          </div>
+        <div class="col-md-4">
+          
+              <div class="radio">
+              <input type="radio" " name="a1" value="C"><label id="AnswerC"></label>
+              </div>
+              <div class="radio">
+              <input type="radio" name="a1" value="D"><label  id="AnswerD"></label>
+              </div>
+            
+          </div>
+    </div>
+    <div class="row" id="submitBtn">
+      <button class="btn btn-result btn-lg " id="submit"> Next question</button>
+
+      
+    </div>
+  </div>
+  <div class="container" id="displayAnswer"></div>
+  <div class="container" id="result"></div>
+       <script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+       
+
+    
+
+  </body>
+
+</html>
